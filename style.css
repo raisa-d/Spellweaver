@@ -1,0 +1,122 @@
+/* 
+   CSS RESET
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* BASE STYLES */
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+h1 {font-size: 3rem;}
+h2 {font-size: 2.8rem;}
+h3 {font-size: 2.6rem;}
+h4 {font-size: 2.4rem;}
+h5 {font-size: 2.2rem;}
+h6 {font-size: 2rem;}
+p, label, input, button {font-size: 1.6rem;}
+
+/* FLEXBOX */
+.flex {
+    display:flex;
+}
+
+nav {
+    flex-flow:column;
+    align-items: center;
+}
+
+/* NAV */
+body {
+    background: #101935;
+    height: 100vh;
+    background-image: url(/stars.jpeg);
+}
+
+header {
+    background: #334069;
+    height: 100%;
+    padding:1rem;
+}
+
+nav, nav a {
+    color: #CCC6E1;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+main {
+    flex:1;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    text-transform:uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+/* Spellbook button */
+#spellbook {
+    background: #CCC6E1;
+    border: 2px solid #CCC6E1;
+    color: #000;
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 0.5rem;
+}
+
+#spellbook:hover {
+    background: #334069;
+    border: 2px solid #CCC6E1;
+    color: #CCC6E1;
+}
