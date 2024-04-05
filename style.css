@@ -68,12 +68,16 @@ p, label, input, button {font-size: 1.6rem;}
     display:flex;
 }
 
-nav {
+header, main {
     flex-flow:column;
     align-items: center;
 }
 
 /* NAV */
+nav {
+    list-style: none;
+}
+
 body {
     background: #91aaf4;
     background-image: url(/stars.jpeg);
@@ -81,11 +85,10 @@ body {
 
 header {
     background: #334069;
-    height: 100%;
-    padding:1rem;
+    padding:1rem 0 3rem 0;
 }
 
-nav, nav a {
+header a, nav a {
     color: #CCC6E1;
     text-decoration: none;
     font-size: 2.5rem;
@@ -93,11 +96,15 @@ nav, nav a {
 
 /* H1 / Logo */
 h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     text-transform:uppercase;
     font-weight: bold;
     letter-spacing: 0.1rem;
     padding-top: 1rem;
+}
+
+h1 a {
+    font-size: 3.4rem;
 }
 
 /* glowing effect */
@@ -106,17 +113,55 @@ h1:hover {
 }
 
 /* Spellbook button */
-#spellbook {
+.btn {
     background: #101935;
     border: 1px solid #CCC6E1;
     height: 3rem;
     text-align: center;
     border-radius: 10px;
     padding: 1rem;
+    margin: 1rem;
 }
 
-#spellbook:hover {
+.btn:hover {
     border: 1px solid #CCC6E1;
     color: #CCC6E1;
     box-shadow: #FC0 1px 0 10px;
+}
+
+/* Styling instructions on homepage */
+#instructions {
+    color: #fff;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 3rem 0;
+    width: 40rem;
+}
+
+/* Search area */
+input {
+    background: #654EB0;
+    color: #fff;
+    border-radius: 15px 0 0 15px;
+    text-align: center;
+    border: 2px solid #654EB0;
+    height: 3rem;
+}
+
+input::placeholder {
+    color: #ffffff6d;
+}
+
+input, #search-button {
+    font-size: 2rem;
+    box-shadow: #dce1c6 1px 0 10px;
+}
+
+#search-button {
+    border-radius: 0 15px 15px 0;
+    background: #CCC6E1;
+    border: 2px solid #CCC6E1;
+    height: 3.5rem;
+    cursor: pointer;
 }
