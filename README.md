@@ -16,7 +16,7 @@ The initial designs for the web app were created using Figma:
 </p>
 
 ## Technologies Used
-- Design: Figma
+- Design: [Figma](https://www.figma.com/)
 - Front End: HTML5, CSS3, JavaScript
 - Storage: Local Storage
 
