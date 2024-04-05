@@ -21,3 +21,5 @@ Spellweaver is currently in its early stages of development. We're excited to be
 
 ## Contributing
 We welcome contributions from the D&D community to make Spellweaver even better! Whether it's bug fixes, new features, or enhancements, feel free to fork our repository and submit pull requests. 
+
+Color Palette: [Duck Egg](https://www.colorhub.app/browse/duck-egg)

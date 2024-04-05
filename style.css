@@ -75,8 +75,7 @@ nav {
 
 /* NAV */
 body {
-    background: #101935;
-    height: 100vh;
+    background: #91aaf4;
     background-image: url(/stars.jpeg);
 }
 
@@ -92,31 +91,32 @@ nav, nav a {
     font-size: 2.5rem;
 }
 
-main {
-    flex:1;
-}
-
+/* H1 / Logo */
 h1 {
     margin-bottom: 2rem;
     text-transform:uppercase;
     font-weight: bold;
     letter-spacing: 0.1rem;
+    padding-top: 1rem;
+}
+
+/* glowing effect */
+h1:hover {
+    text-shadow: #FC0 1px 0 10px;
 }
 
 /* Spellbook button */
 #spellbook {
-    background: #CCC6E1;
-    border: 2px solid #CCC6E1;
-    color: #000;
-    width: 100%;
+    background: #101935;
+    border: 1px solid #CCC6E1;
     height: 3rem;
     text-align: center;
     border-radius: 10px;
-    padding-top: 0.5rem;
+    padding: 1rem;
 }
 
 #spellbook:hover {
-    background: #334069;
-    border: 2px solid #CCC6E1;
+    border: 1px solid #CCC6E1;
     color: #CCC6E1;
+    box-shadow: #FC0 1px 0 10px;
 }
