@@ -33,7 +33,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+ol li, ul li {
 	list-style: none;
 }
 blockquote, q {
@@ -68,8 +68,16 @@ p, label, input, button {font-size: 1.6rem;}
     display:flex;
 }
 
-header, main {
+.col {
     flex-flow:column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+header, main {
     align-items: center;
 }
 
@@ -129,13 +137,23 @@ h1:hover {
     box-shadow: #FC0 1px 0 10px;
 }
 
+/* Main Section Sizing */
+main {
+    height: 15rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
 /* Styling instructions on homepage */
 #instructions {
+    background: #0a0f23;
+    padding: 0.5rem;
+    border-radius: 15px;
     color: #fff;
     text-align: center;
     font-size: 2.4rem;
     font-weight: bold;
-    margin: 3rem 0;
+    margin-bottom: 3rem;
     width: 40rem;
 }
 
@@ -153,15 +171,44 @@ input::placeholder {
     color: #ffffff6d;
 }
 
-input, #search-button {
+input, #search-btn {
     font-size: 2rem;
     box-shadow: #dce1c6 1px 0 10px;
 }
 
-#search-button {
+#search-btn {
     border-radius: 0 15px 15px 0;
     background: #CCC6E1;
     border: 2px solid #CCC6E1;
     height: 3.5rem;
     cursor: pointer;
+}
+
+/* Display Spell */
+#spell-desc {
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    height: 30rem;
+}
+
+#spell-desc section {
+    flex: 1;
+    height: 100%;
+}
+
+#left-page {
+    background: #334069;
+    border: 10px solid #CCC6E1;
+    color: #CCC6E1;
+}
+
+#right-page {
+    background: #CCC6E1;
+    border: 10px solid #334069;
+    color: #000;
+}
+
+#left-page, #right-page {
+    padding: 1rem;
 }

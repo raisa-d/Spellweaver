@@ -6,8 +6,8 @@
     <title>Spellweaver</title>
     <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-    <header class="flex">
+<body class="flex col">
+    <header class="flex col">
         <h1>
             <a href="/index.html">
                 Spellweaver
@@ -22,15 +22,35 @@
             </li>
         </nav>
     </header>
-    <main class="flex">
-        <p id="instructions">Search & Add Dungeons &amp; Dragons Spells to Your Deck</p>
+    <main class="flex col">
+        <p id="instructions">Search for Dungeons &amp; Dragons Spells & & Add Them to Your Deck</p>
         
         <!-- search area -->
         <div>
-            <input type="text" placeholder="Spell Name">
-            <button id="search-button">Search</button>
+            <input type="text" placeholder="Acid Arrow">
+            <button id="search-btn">Search</button>
         </div>
     </main>
+    <!-- Spell -->
+    <section id="spell-sect" class="flex col center">
+        <section id="spell-desc" class="flex">
+            <section id="left-page">
+                <h2>Acid Arrow</h2>
+                <ul>
+                    <li>Duration: Instantaneous</li>
+                    <li>Casting Time: 1 Action</li>
+                    <li>School: Evocation</li>
+                    <li>Level: 2</li>
+                    <li>Range: 90 Feet</li>
+                    <li>Classes: Wizard</li>
+                    <li>Subclasses: Lore, Land</li>
+                </ul>
+            </section>
+            <section id="right-page">
+                <p>A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 acid damage immediately and 2d4 acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn.</p>
+            </section>
+        </section>
+    </section>
 
     <script type="text/javascript" src="/main.js"></script>
 </body>
