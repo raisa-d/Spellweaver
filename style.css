@@ -203,6 +203,11 @@ input, #search-btn {
     color: #CCC6E1;
 }
 
+#left-page h2 {
+    text-align:center;
+    margin-bottom: 1rem;
+}
+
 #right-page {
     background: #CCC6E1;
     border: 10px solid #334069;
@@ -211,4 +216,5 @@ input, #search-btn {
 
 #left-page, #right-page {
     padding: 1rem;
+    font-size: 2rem;
 }
