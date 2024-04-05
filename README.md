@@ -2,11 +2,21 @@
 Spellweaver is a web application designed to help Dungeons &amp; Dragons (D&D) players manage their spellbooks efficiently. Whether you're a player looking to organize your spells or a Dungeon Master (DM) preparing for an epic adventure, Spellweaver provides the tools you need to master the arcane arts.
 
 ## Table of Contents
+- [Design](#design)
+- [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Development Stage](#development-stage)
 - [Contributing](#contributing)
 
+## Design
+The initial designs for the web app were created using Figma:
+<p align="center">
+  <img height="350" alt="Spellweaver Searchbar Design" src="https://github.com/raisa-d/Spellweaver/assets/144272001/26740ede-b299-4e2b-bab2-7205035c9687">
+  <img height="350" alt="Spellweaver Spellbook Design" src="https://github.com/raisa-d/Spellweaver/assets/144272001/0926619a-311d-4e33-a9c6-87edfaa48f8d">
+</p>
+
 ## Technologies Used
+- Design: Figma
 - Front End: HTML5, CSS3, JavaScript
 - Storage: Local Storage
 
