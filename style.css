@@ -62,6 +62,7 @@ h4 {font-size: 2.4rem;}
 h5 {font-size: 2.2rem;}
 h6 {font-size: 2rem;}
 p, label, input, button {font-size: 1.6rem;}
+.bold {font-weight: 700;}
 
 /* FLEXBOX */
 .flex {
@@ -105,11 +106,11 @@ header a, nav a {
 /* H1 / Logo */
 h1 {
     margin-bottom: 3rem;
-    text-transform:uppercase;
-    font-weight: bold;
     letter-spacing: 0.1rem;
     padding-top: 1rem;
 }
+
+h1, h2 {text-transform:uppercase;}
 
 h1 a {
     font-size: 3.4rem;
@@ -139,7 +140,7 @@ h1:hover {
 
 /* Main Section Sizing */
 main {
-    height: 15rem;
+    height: 20rem;
     justify-content: center;
     margin-bottom: 3rem;
 }
@@ -152,7 +153,6 @@ main {
     color: #fff;
     text-align: center;
     font-size: 2.4rem;
-    font-weight: bold;
     margin-bottom: 3rem;
     width: 40rem;
 }
@@ -201,6 +201,7 @@ input, #search-btn {
     background: #334069;
     border: 10px solid #CCC6E1;
     color: #CCC6E1;
+    left:0.5rem;
 }
 
 #left-page h2 {
@@ -212,9 +213,39 @@ input, #search-btn {
     background: #CCC6E1;
     border: 10px solid #334069;
     color: #000;
+    right:0.5rem;
 }
 
 #left-page, #right-page {
     padding: 1rem;
     font-size: 2rem;
+    position:relative;
+}
+
+#left-page li {
+    margin: 1.5rem 0;
+}
+
+#right-page p {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-left: 1rem;
+    /* overflow: scroll; */
+}
+
+#plus {
+    font-size: 2.8rem;
+    background: #654EB0;
+    color: #CCC6E1;
+    border: 1px solid #CCC6E1;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    text-align:center;
+    cursor:pointer;
+}
+
+#plus:hover {
+    background: #334069;
+    border: 1px solid #CCC6E1;
 }

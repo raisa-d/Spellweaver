@@ -8,7 +8,7 @@
 </head>
 <body class="flex col">
     <header class="flex col">
-        <h1>
+        <h1 class="bold">
             <a href="/index.html">
                 Spellweaver
             </a>
@@ -23,30 +23,32 @@
         </nav>
     </header>
     <main class="flex col">
-        <p id="instructions">Search for Dungeons &amp; Dragons Spells & & Add Them to Your Deck</p>
+        <p id="instructions" class="bold">Search for Dungeons &amp; Dragons Spells & & Add Them to Your Deck</p>
         
         <!-- search area -->
-        <div>
+        <div id="search-area">
             <input type="text" placeholder="Acid Arrow">
             <button id="search-btn">Search</button>
         </div>
+        <!-- <div id="plus" class="bold">&#43;</div> -->
     </main>
+    
     <!-- Spell -->
     <section id="spell-sect" class="flex col center">
         <section id="spell-desc" class="flex">
             <section id="left-page">
-                <h2>Acid Arrow</h2>
+                <h2 class="bold">Acid Arrow</h2>
                 <ul>
-                    <li>Duration: Instantaneous</li>
-                    <li>Casting Time: 1 Action</li>
-                    <li>School: Evocation</li>
-                    <li>Level: 2</li>
-                    <li>Range: 90 Feet</li>
-                    <li>Classes: Wizard</li>
-                    <li>Subclasses: Lore, Land</li>
+                    <li><span class="bold">Duration:</span> Instantaneous</li>
+                    <li><span class="bold">Casting Time:</span> 1 Action</li>
+                    <li><span class="bold">School:</span> Evocation</li>
+                    <li><span class="bold">Level:</span> 2</li>
+                    <li><span class="bold">Range:</span> 90 Feet</li>
+                    <li><span class="bold">Classes:</span> Wizard</li>
+                    <li><span class="bold">Subclasses:</span> Lore, Land</li>
                 </ul>
             </section>
-            <section id="right-page">
+            <section id="right-page" class="flex center col">
                 <p>A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 acid damage immediately and 2d4 acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn.</p>
             </section>
         </section>
