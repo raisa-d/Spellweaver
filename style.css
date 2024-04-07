@@ -148,14 +148,18 @@ h1:hover {
 main {
     height: 20rem;
     justify-content: center;
+    border: 2px dotted white;
+    border-radius: 35px;
+    padding: 3rem 1rem;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 /* Styling instructions on homepage */
 #instructions {
-    background: #0a0f23;
     padding: 0.5rem;
     border-radius: 15px;
     color: #fff;
+
     text-align: center;
     font-size: 2.4rem;
     margin-bottom: 3rem;
@@ -171,21 +175,22 @@ input {
     text-align: center;
     border: 2px solid #654EB0;
     height: 3rem;
+    border: 0.5px solid #CCC6E1;
 }
 
 input::placeholder {
-    color: #ffffff6d;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 input, #search-btn {
     font-size: 2rem;
-    box-shadow: #dce1c6 1px 0 10px;
+    box-shadow: #CCC6E1 1px 0 10px;
 }
 
 #search-btn {
     border-radius: 0 15px 15px 0;
     background: #CCC6E1;
-    border: 2px solid #CCC6E1;
+    border: 0.5px solid #654EB0;
     height: 3.5rem;
     cursor: pointer;
 }
@@ -226,6 +231,7 @@ input, #search-btn {
     padding: 1rem;
     font-size: 2rem;
     position:relative;
+    overflow: scroll;
 }
 
 #left-page li {
@@ -236,7 +242,6 @@ input, #search-btn {
     font-size: 2rem;
     line-height: 3rem;
     margin: 1rem;
-    overflow: scroll;
 }
 
 #plus {
