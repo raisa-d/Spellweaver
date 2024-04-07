@@ -83,12 +83,15 @@ header, main {
 }
 
 .col2 {
-    margin-top: 5rem;
     justify-content: space-around;
     align-items: center;
 }
 
-/* NAV */
+header {
+    justify-content: space-between;
+}
+
+/* HEADER */
 nav {
     list-style: none;
 }
@@ -100,7 +103,8 @@ body {
 
 header {
     background: #334069;
-    padding:1rem 0 3rem 0;
+    padding:2rem;
+    box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.6);
 }
 
 header a, nav a {
@@ -111,9 +115,8 @@ header a, nav a {
 
 /* H1 / Logo */
 h1 {
-    margin-bottom: 3rem;
     letter-spacing: 0.1rem;
-    padding-top: 1rem;
+    margin-left: 2rem;
 }
 
 h1, h2 {text-transform:uppercase;}
@@ -125,6 +128,23 @@ h1 a {
 /* glowing effect */
 h1:hover {
     text-shadow: #FC0 1px 0 10px;
+}
+
+/* SOCIAL MEDIA ICONS */
+#socials {
+    margin-right: 2rem;
+}
+
+#socials a {
+    color: #CCC6E1;
+}
+
+#socials a:not(:last-child) {
+    margin-right:2rem;
+}
+
+#socials a:hover {
+    color: #fff;
 }
 
 /* Spellbook button */
@@ -196,6 +216,9 @@ input, #search-btn {
 }
 
 /* Display Spell */
+#spell-sect {
+    margin-top: 7rem;
+}
 
 #spell-desc {
     align-items: center;
