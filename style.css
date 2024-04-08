@@ -101,6 +101,7 @@ nav {
 body {
     background: #91aaf4;
     background-image: url(/stars.jpeg);
+    background-size: auto 100%;
 }
 
 header {
@@ -292,6 +293,25 @@ input, #search-btn {
     border: 1px solid #CCC6E1;
 }
 
+/* FOOTER */
+footer {
+    background: #0a0f23;
+    margin-top: 10rem;
+    justify-content:center;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+footer, footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    text-shadow: #fc0 1px 0 10px;
+}
+
+/* MEDIA QUERIES */
 @media all and (max-width:1150px) {
     .col2 {
         flex-direction: column;
