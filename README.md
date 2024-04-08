@@ -2,11 +2,15 @@
 Spellweaver is a web application designed to help Dungeons &amp; Dragons (D&D) players manage their spellbooks efficiently. Whether you're a player looking to organize your spells or a Dungeon Master (DM) preparing for an epic adventure, Spellweaver provides the tools you need to master the arcane arts.
 
 ## Table of Contents
+- [Video Demo](#video-demo)
 - [Design](#design)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Development Stage](#development-stage)
 - [Contributing](#contributing)
+
+## Video Demo
+[video.mov](https://github.com/raisa-d/Spellweaver/assets/144272001/bd468b1c-ba51-4dcd-bda0-d89f7d73ebc1)
 
 ## Design
 The initial designs for the web app were created using Figma:
@@ -27,7 +31,7 @@ The initial designs for the web app were created using Figma:
 - API Integration: Utilize the [D&D API](https://www.dnd5eapi.co/) to fetch information about spells from the official source. This ensures that your spellbook is always up-to-date with the latest rules and content additions.
 
 ## Development Stage
-Spellweaver is currently in its early stages of development. We're excited to begin work on this project and bring our vision of a comprehensive spellbook management tool to life. Stay tuned for updates as we progress with development!
+Currently, we have implemented functionality & user interface for the spell search, allowing users to search for spells by name. Once a search query is made, the spell's information and statistics dynamically appear in the Document Object Model (DOM), providing users with detailed insights into each spell. The next focus will be on creating the user's deck and adding the ability to add spells to said deck, which will be saved using local storage.
 
 ## Contributing
 We welcome contributions from the D&D community to make Spellweaver even better! Whether it's bug fixes, new features, or enhancements, feel free to fork our repository and submit pull requests. 
