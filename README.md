@@ -10,13 +10,15 @@ Spellweaver is a web application designed to help Dungeons &amp; Dragons (D&D) p
 - [Contributing](#contributing)
 
 ## Video Demo
-[video.mov](https://github.com/raisa-d/Spellweaver/assets/144272001/bd468b1c-ba51-4dcd-bda0-d89f7d73ebc1)
+https://github.com/raisa-d/Spellweaver/assets/144272001/42d0f57a-f13c-49c0-b046-f14b4d4510d5
 
 ## Design
-The initial designs for the web app were created using Figma:
 <p align="center">
-  <img height="350" alt="Spellweaver Searchbar Design" src="https://github.com/raisa-d/Spellweaver/assets/144272001/26740ede-b299-4e2b-bab2-7205035c9687">
-  <img height="350" alt="Spellweaver Spellbook Design" src="https://github.com/raisa-d/Spellweaver/assets/144272001/0926619a-311d-4e33-a9c6-87edfaa48f8d">
+The initial designs for the web app were created using Figma:
+</p>
+<p align="center">
+  <img height="300" alt="Spellweaver Searchbar Design" src="https://github.com/raisa-d/Spellweaver/assets/144272001/26740ede-b299-4e2b-bab2-7205035c9687">
+  <img height="300" alt="Spellweaver Spellbook Design" src="https://github.com/raisa-d/Spellweaver/assets/144272001/0926619a-311d-4e33-a9c6-87edfaa48f8d">
 </p>
 
 ## Technologies Used
