@@ -33,6 +33,10 @@ The initial designs for the web app were created using Figma:
 - API Integration: Utilize the [D&D API](https://www.dnd5eapi.co/) to fetch information about spells from the official source. This ensures that your spellbook is always up-to-date with the latest rules and content additions.
 
 ## Development Stage
+04.10.2024 // 
+The ability to add spells to local storage via hitting the plus button has been added. A user will not be able to add a spell twice if they try to. The plus symbol will turn to a check once the spell is added. The search page is also now responsive for all screen sizes. In the next update, the spells will actually be added to the "spellbook" page.
+
+04.08.2024 // 
 Currently, we have implemented functionality & user interface for the spell search, allowing users to search for spells by name. Once a search query is made, the spell's information and statistics dynamically appear in the Document Object Model (DOM), providing users with detailed insights into each spell. The next focus will be on creating the user's deck and adding the ability to add spells to said deck, which will be saved using local storage.
 
 ## Contributing
