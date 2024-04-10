@@ -8,6 +8,9 @@ document.querySelector('input').addEventListener('keypress', function(event) {
   }
 });
 
+// event listener for adding spell to deck
+document.querySelector('#plus').addEventListener('click', addSpellToLocalStorage);
+
 // API fetch request
 function getFetch(){
   let spell = document.querySelector('input').value.toLowerCase();
@@ -28,10 +31,9 @@ function getFetch(){
       });
 }
 
-// insert spell name into DOM
-const displayName = data => document.querySelector('#left-page h2').textContent = data.name;
-
-// call all the functions to display the spell info
+const displayName = data => {
+  return document.querySelector('#left-page h2').textContent = data.name;
+};
 const displaySpellInfo = data => {
   displayDuration(data);
   displayCastingTime(data);
@@ -44,23 +46,21 @@ const displaySpellInfo = data => {
   displayDmgType(data);
   displayDmgAtCharLevel(data);
 };
-
-// insert duration into DOM
-const displayDuration = data =>  document.querySelector('#duration').textContent = data.duration;
-
-// insert casting time
-const displayCastingTime = data => document.querySelector('#c-time').textContent = data.casting_time;
-
-// insert school
-const displaySchool = data => document.querySelector('#school').textContent = data.school.name;
-
-// insert level
-const displayLevel = data => document.querySelector('#level').textContent = data.level;
-
-// insert range
-const displayRange = data => document.querySelector('#range').textContent = data.range;
-
-// insert classes & subclasses
+const displayDuration = data => {
+  return document.querySelector('#duration').textContent = data.duration;
+};
+const displayCastingTime = data => {
+  return document.querySelector('#c-time').textContent = data.casting_time;
+};
+const displaySchool = data => {
+  return document.querySelector('#school').textContent = data.school.name;
+};
+const displayLevel = data => {
+  return document.querySelector('#level').textContent = data.level;
+};
+const displayRange = data => {
+  return document.querySelector('#range').textContent = data.range;
+};
 const displayClasses = data => {
   const classes = data.classes.map(e => e.name).join(', ')
   document.querySelector('#classes').textContent = classes;
@@ -68,17 +68,13 @@ const displayClasses = data => {
   const subclasses = data.subclasses.map(e => e.name).join(', ')
   document.querySelector('#subclasses').textContent = subclasses;
 };
-
-// insert description
-const displayDesc = data => document.querySelector('#right-page p').textContent = data.desc[0];
-
-// insert components
+const displayDesc = data => {
+  return document.querySelector('#right-page p').textContent = data.desc[0];
+}; 
 const displayComponents = data => {
   const components = data.components.join(', ')
   document.querySelector('#components').textContent = components;
 };
-
-// insert damage type
 const displayDmgType = data => {
   const dmgType = document.querySelector('#dmg-type');
   if (data.damage) {
@@ -86,8 +82,6 @@ const displayDmgType = data => {
     dmgType.textContent = damage;
   } else {dmgType.textContent = 'None';};
 };
-
-// insert dmg at character level
 const displayDmgAtCharLevel = data => {
   let dmgList = []
   if(data.damage) {
@@ -122,4 +116,38 @@ const displayDmgAtCharLevel = data => {
   };
 
   console.log(dmgList)
-}
+};
+
+// key number so each spell has a unique number 
+// ***TO DO: instead, need to get the key number from local storage and start from the last number
+let keyNum = 1;
+
+// ***TO DO: If spell is already in local storage, have it start as a check on that spell. otherwise, have it start as a plus
+
+function addSpellToLocalStorage() {
+  // save spellname to a variable
+  const spellName = document.querySelector('#left-page h2').textContent
+  
+  // ***TO DO: if the spell is not already in local storage, then add the spell to it
+
+  // add spell name to local storage
+  localStorage.setItem(`spell${keyNum}`, spellName);
+  keyNum += 1; // increment key number
+
+  plusToCheck()
+};
+
+// variables to store plus and check symbols
+const plusSymbol = document.querySelector('#plus .fa-plus');
+const checkSymbol = document.querySelector('#plus .fa-check');
+
+// When someone adds a spell to their deck or has it added, change the plus sign to a check so they know they already have it
+function plusToCheck() {
+  plusSymbol.classList.add('hidden');
+  checkSymbol.classList.remove('hidden');
+};
+
+function checkToPlus() {
+  plusSymbol.classList.remove('hidden');
+  checkSymbol.classList.add('hidden');
+};
