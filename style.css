@@ -108,6 +108,7 @@ header {
     background: #334069;
     padding:2rem;
     box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.6);
+    width: 100%;
 }
 
 header a, nav a {
@@ -316,7 +317,41 @@ footer a:hover {
     text-shadow: #fc0 1px 0 10px;
 }
 
-/* MEDIA QUERIES */
+/* ===SPELLBOOK PAGE=== */
+#spells-container {
+    min-width: 50rem;
+    min-height: 30rem;
+    margin-top: 5rem;
+}
+
+.spell-slot {
+    background: #654EB0;
+    /* background: linear-gradient(to bottom, #654EB0, #101935); */
+    background: linear-gradient(to top, #654EB0, #91aaf4);
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    padding: 1rem;
+    margin: 1rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid #CCC6E1;
+}
+
+.spell-slot:hover {
+    background: linear-gradient(to bottom, #654EB0, #91aaf4);
+    cursor: pointer;
+}
+
+.spell-slot p {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ===MEDIA QUERIES=== */
 @media all and (max-width:1150px) {
     .col2 {
         flex-direction: column;
