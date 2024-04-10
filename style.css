@@ -364,4 +364,125 @@ footer a:hover {
     h1 a {
         font-size: 2.9rem;
     }
+
+    h1 {
+        margin: 0;
+    }
+}
+
+@media all and (max-width:610px) {
+    /* make spell description book smaller */
+    #spell-desc {
+        width: 55rem;
+    }
+    #right-page p, #left-page li {
+        font-size: 1.6rem;
+    }
+
+    #left-page h2 {
+        font-size: 2rem;
+    }
+
+    /* stack the header & fix spacing */
+    header {
+        flex-flow:column;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    nav {
+        margin: 2rem 0;
+    }
+
+    #socials {
+        margin:  1rem 0 0 0;
+    }
+
+    footer {margin-top: 3rem;}
+}
+
+@media all and (max-width:550px) {
+    #spell-desc {
+        width: 50rem;
+    }
+
+    #left-page li {
+        margin: 0 0 1rem 0;
+    }
+
+    #right-page p {
+        line-height: 2.1rem;
+        margin: 0.5rem 0;
+    }
+}
+
+@media all and (max-width:500px) {
+    #spell-desc {
+        width: 48rem;
+    }
+
+    #plus {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+@media all and (max-width:475px) {
+    #spell-desc {
+        width: 45rem;
+    }
+
+    #plus {
+        height: 2.3rem;
+        width: 2.3rem;
+    }
+}
+
+@media all and (max-width:450px) {
+    /* stack spell description */
+    #spell-desc {
+        flex-direction:column;
+    }
+
+    #left-page, #right-page {
+        width: 30rem;
+        min-height: 20rem;
+        position:static;
+    }
+
+    footer {
+        margin-top: 20rem;
+    }
+}
+
+@media all and (max-width:430px) {
+    header {
+        width:100%;
+    }
+    
+    main {
+        margin: 2rem 0;
+    }
+
+    #instructions {
+        margin-bottom :1rem;
+        width: 30rem;
+    }
+}
+
+@media all and (max-width:400px) {
+    header {
+        width:100%;
+    }   
+}
+
+@media all and (max-width:380px) {
+    #left-page, #right-page {
+        width: 25rem;
+        min-height: 25rem;
+    }
+
+    footer {
+        margin-top: 30rem;
+    }
 }
