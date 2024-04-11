@@ -3,14 +3,24 @@ Spellweaver is a web application designed to help Dungeons &amp; Dragons (D&D) p
 
 ## Table of Contents
 - [Video Demo](#video-demo)
+- [Development Stage](#development-stage)
 - [Design](#design)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
-- [Development Stage](#development-stage)
 - [Contributing](#contributing)
 
 ## Video Demo
-https://github.com/raisa-d/Spellweaver/assets/144272001/42d0f57a-f13c-49c0-b046-f14b4d4510d5
+https://github.com/raisa-d/Spellweaver/assets/144272001/dbe5c56b-a999-442f-83c3-02daeaaeafb5
+
+## Development Stage
+04.11.2024 //
+Now when users add spells to their deck, the spells will appear on the spellbook page!
+
+04.10.2024 // 
+The ability to add spells to local storage via hitting the plus button has been added. A user will not be able to add a spell twice if they try to. The plus symbol will turn to a check once the spell is added. The search page is also now responsive for all screen sizes. In the next update, the spells will actually be added to the "spellbook" page.
+
+04.08.2024 // 
+Currently, we have implemented functionality & user interface for the spell search, allowing users to search for spells by name. Once a search query is made, the spell's information and statistics dynamically appear in the Document Object Model (DOM), providing users with detailed insights into each spell. The next focus will be on creating the user's deck and adding the ability to add spells to said deck, which will be saved using local storage.
 
 ## Design
 <p align="center">
@@ -31,16 +41,6 @@ The initial designs for the web app were created using Figma:
 -  Customization Options: Create multiple spellbooks for different characters or campaigns, and mark spells as favorites for quick access.
 -  Mobile Compatibility: Mobile-friendly interface, perfect for in-person gaming sessions.
 - API Integration: Utilize the [D&D API](https://www.dnd5eapi.co/) to fetch information about spells from the official source. This ensures that your spellbook is always up-to-date with the latest rules and content additions.
-
-## Development Stage
-04.11.2024 //
-Now when users add spells to their deck, the spells will appear on the spellbook page!
-
-04.10.2024 // 
-The ability to add spells to local storage via hitting the plus button has been added. A user will not be able to add a spell twice if they try to. The plus symbol will turn to a check once the spell is added. The search page is also now responsive for all screen sizes. In the next update, the spells will actually be added to the "spellbook" page.
-
-04.08.2024 // 
-Currently, we have implemented functionality & user interface for the spell search, allowing users to search for spells by name. Once a search query is made, the spell's information and statistics dynamically appear in the Document Object Model (DOM), providing users with detailed insights into each spell. The next focus will be on creating the user's deck and adding the ability to add spells to said deck, which will be saved using local storage.
 
 ## Contributing
 We welcome contributions from the D&D community to make Spellweaver even better! Whether it's bug fixes, new features, or enhancements, feel free to fork our repository and submit pull requests. 
