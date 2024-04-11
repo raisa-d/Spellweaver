@@ -259,6 +259,15 @@ input, #search-btn {
     font-size: 2rem;
     position:relative;
     overflow: scroll;
+    scrollbar-width: thin;
+}
+
+#right-page {
+    scrollbar-color: #334069 #CCC6E1;
+}
+
+#left-page {
+    scrollbar-color: #CCC6E1 #334069;
 }
 
 #left-page li {
