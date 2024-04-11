@@ -328,7 +328,7 @@ footer a:hover {
     background: #654EB0;
     /* background: linear-gradient(to bottom, #654EB0, #101935); */
     background: linear-gradient(to top, #654EB0, #91aaf4);
-    border-radius: 50%;
+    border-radius: 10rem 5rem;
     height: 10rem;
     width: 10rem;
     padding: 1rem;

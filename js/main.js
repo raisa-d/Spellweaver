@@ -1,4 +1,4 @@
-class SpellManager {
+class SpellDisplayer {
   constructor() {
     this.plusSymbol = document.querySelector('#plus .fa-plus');
     this.checkSymbol = document.querySelector('#plus .fa-check');
@@ -184,5 +184,5 @@ class SpellManager {
   }
 };
 
-// instantiate spellManager
-const spellManager = new SpellManager();
+// instantiate SpellDisplayer
+const spellDisplayer = new SpellDisplayer();
