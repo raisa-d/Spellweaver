@@ -20,11 +20,15 @@ class Spellbook {
     }
 
     displaySpellNames() {
-        // for each spell name, create a spell slot and add the spellslot to the container
-        this.savedSpells.forEach(spellName => {
-            const spellSlot = this.createSpellSlot(spellName);
-            this.container.appendChild(spellSlot);
-        })
+        if(this.savedSpells.length === 0) {
+            this.displayEmptySpellbookScreen();
+        } else {
+            // for each spell name, create a spell slot and add the spellslot to the container
+            this.savedSpells.forEach(spellName => {
+                const spellSlot = this.createSpellSlot(spellName);
+                this.container.appendChild(spellSlot);
+            })
+        }
     }
 
     createSpellSlot(spellName) {
@@ -40,6 +44,16 @@ class Spellbook {
         // append title to slot
         spellSlot.appendChild(spellTitle);
         return spellSlot;
+    }
+
+    displayEmptySpellbookScreen() {
+        // clear container
+        this.container.textContent = '';
+        const message = document.createElement('p');
+        message.classList.add('empty-msg');
+        message.textContent = 'Your spellbook is empty. Go to the search page to add spells, then come back and check out your spellbook!';
+
+        this.container.appendChild(message);
     }
 }
 
