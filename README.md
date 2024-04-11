@@ -22,6 +22,12 @@ The ability to add spells to local storage via hitting the plus button has been 
 04.08.2024 // 
 Currently, we have implemented functionality & user interface for the spell search, allowing users to search for spells by name. Once a search query is made, the spell's information and statistics dynamically appear in the Document Object Model (DOM), providing users with detailed insights into each spell. The next focus will be on creating the user's deck and adding the ability to add spells to said deck, which will be saved using local storage.
 
+04.05.2024 //
+Began styling the spells that will be displayed on the search page & styled the search bar with vanilla CSS.
+
+04.04.2024 //
+We have designed an [initial concept](#design) in Figma & began to build the front-end. There is a header and a nav as of right now.
+
 ## Design
 <p align="center">
 The initial designs for the web app were created using Figma:
