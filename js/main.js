@@ -155,7 +155,7 @@ class SpellDisplayer {
     if (!this.spellIsInLocalStorage(spellName)) {
       this.checkToPlus();
       // add it to local storage
-      localStorage.setItem(`${this.keyNum}`, spellName);
+      localStorage.setItem(`spell_${this.keyNum}`, spellName);
       this.keyNum++;
       this.plusToCheck(); // turn the plus to a check
     } else {

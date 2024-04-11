@@ -9,11 +9,13 @@ class Spellbook {
         const savedSpells = [];
         // loop through local storage
         for(let i = 0; i < localStorage.length; i++) {
-            const key = parseInt(localStorage.key(i)); // store key as number
+            const key = localStorage.key(i); // store key as number
             
             // add spell name to list
-            if(!isNaN(key)) {
-                savedSpells.push(localStorage.getItem(key))
+            if(key.startsWith('spell_')) {
+                // extract spell name from key
+                const spellName = localStorage.getItem(key)
+                savedSpells.push(spellName);
             }
         }
         return savedSpells;
@@ -65,3 +67,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // ***TO DO: When you click a spell, it will expand to have all of the information.
+// ***TO DO: Allow user to have multiple spellbooks for different characters
+// ***TO DO: Give option to remove spell from deck

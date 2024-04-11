@@ -90,7 +90,7 @@ header, main {
 }
 
 header {
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* HEADER */
@@ -120,7 +120,6 @@ header a, nav a {
 /* H1 / Logo */
 h1 {
     letter-spacing: 0.1rem;
-    margin-left: 2rem;
 }
 
 h1, h2 {text-transform:uppercase;}
