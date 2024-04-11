@@ -48,3 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const spellbook = new Spellbook();
     spellbook.displaySpellNames();
 })
+
+
+// ***TO DO: When you click a spell, it will expand to have all of the information.

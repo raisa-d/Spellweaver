@@ -169,12 +169,15 @@ h1:hover {
 }
 
 /* Main Section Sizing */
-main {
+#main {
     height: 20rem;
     justify-content: center;
+    padding: 3rem 1rem;
+}
+
+#main, #spells-container {
     border: 2px dotted white;
     border-radius: 35px;
-    padding: 3rem 1rem;
     background: rgba(255, 255, 255, 0.2);
 }
 
@@ -319,19 +322,20 @@ footer a:hover {
 
 /* ===SPELLBOOK PAGE=== */
 #spells-container {
-    min-width: 50rem;
-    min-height: 30rem;
+    min-width: 60rem;
+    max-width: 80rem;
+    min-height: 40rem;
     margin-top: 5rem;
+    flex-wrap: wrap;
 }
 
 .spell-slot {
     background: #654EB0;
-    /* background: linear-gradient(to bottom, #654EB0, #101935); */
     background: linear-gradient(to top, #654EB0, #91aaf4);
     border-radius: 10rem 5rem;
     height: 10rem;
     width: 10rem;
-    padding: 1rem;
+    padding: 1.5rem;
     margin: 1rem;
     display:flex;
     justify-content:center;
@@ -340,6 +344,7 @@ footer a:hover {
 }
 
 .spell-slot:hover {
+    background: #91aaf4;
     background: linear-gradient(to bottom, #654EB0, #91aaf4);
     cursor: pointer;
 }
