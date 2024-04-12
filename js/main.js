@@ -186,3 +186,5 @@ class SpellDisplayer {
 
 // instantiate SpellDisplayer
 const spellDisplayer = new SpellDisplayer();
+
+// *** TO DO: figure out why the key is showing as spell_NaN
