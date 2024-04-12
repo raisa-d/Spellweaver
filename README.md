@@ -3,14 +3,20 @@ Spellweaver is a web application designed to help Dungeons &amp; Dragons (D&D) p
 
 ## Table of Contents
 - [Video Demo](#video-demo)
+- [Features](#features)
 - [Development Stage](#development-stage)
 - [Design](#design)
 - [Technologies Used](#technologies-used)
-- [Features](#features)
 - [Contributing](#contributing)
 
 ## Video Demo
 https://github.com/raisa-d/Spellweaver/assets/144272001/dbe5c56b-a999-442f-83c3-02daeaaeafb5
+
+## Features
+-  Intuitive Spell Management: Easily search, filter, and add spells to your spellbook, tailored to your character or campaign.
+-  Customization Options: Create multiple spellbooks for different characters or campaigns, and mark spells as favorites for quick access.
+-  Mobile Compatibility: Mobile-friendly interface, perfect for in-person gaming sessions.
+- API Integration: Utilize the [D&D API](https://www.dnd5eapi.co/) to fetch information about spells from the official source. This ensures that your spellbook is always up-to-date with the latest rules and content additions.
 
 ## Development Stage
 04.11.2024 //
@@ -40,19 +46,12 @@ The initial designs for the web app were created using Figma:
   <img height="300" alt="Spellweaver Searchbar Design" src="https://github.com/raisa-d/Spellweaver/assets/144272001/26740ede-b299-4e2b-bab2-7205035c9687">
   <img height="300" alt="Spellweaver Spellbook Design" src="https://github.com/raisa-d/Spellweaver/assets/144272001/0926619a-311d-4e33-a9c6-87edfaa48f8d">
 </p>
+<p>Color Palette: <a href="https://www.colorhub.app/browse/duck-egg">Duck Egg</a></p>
 
 ## Technologies Used
 - Design: [Figma](https://www.figma.com/)
 - Front End: HTML5, CSS3, JavaScript
 - Storage: Local Storage
 
-## Features
--  Intuitive Spell Management: Easily search, filter, and add spells to your spellbook, tailored to your character or campaign.
--  Customization Options: Create multiple spellbooks for different characters or campaigns, and mark spells as favorites for quick access.
--  Mobile Compatibility: Mobile-friendly interface, perfect for in-person gaming sessions.
-- API Integration: Utilize the [D&D API](https://www.dnd5eapi.co/) to fetch information about spells from the official source. This ensures that your spellbook is always up-to-date with the latest rules and content additions.
-
 ## Contributing
 We welcome contributions from the D&D community to make Spellweaver even better! Whether it's bug fixes, new features, or enhancements, feel free to fork our repository and submit pull requests. 
-
-Color Palette: [Duck Egg](https://www.colorhub.app/browse/duck-egg)
