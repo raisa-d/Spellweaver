@@ -2,6 +2,24 @@ class Spellbook {
     constructor() {
         this.container = document.querySelector('#spells-container');
         this.savedSpells = this.getSavedSpells();
+
+        // add event listener to the spells container. use bind(this) so this will refer to the instance of the Spellbook class and not to the spells container
+        this.container.addEventListener('click', this.handleSpellSlotClick.bind(this));
+    }
+
+    handleSpellSlotClick(event) {
+        const spellSlot = event.target.closest('.spell-slot');
+        if(spellSlot) {
+            // retrieve spell name
+            const spellName = spellSlot.textContent.trim();
+
+            // call method to handle what happens after a spell slot is clicked
+            this.displaySpellDetails(spellName);
+        }
+    }
+
+    displaySpellDetails(spellName) {
+        console.log(`You clicked ${spellName}`);
     }
 
     // get an array of saved spells out of local storage
@@ -57,14 +75,13 @@ class Spellbook {
 
         this.container.appendChild(message);
     }
-}
+};
 
 // event listener
 document.addEventListener('DOMContentLoaded', () => {
     const spellbook = new Spellbook();
     spellbook.displaySpellNames();
-})
-
+});
 
 // ***TO DO: When you click a spell, it will expand to have all of the information.
 // ***TO DO: Allow user to have multiple spellbooks for different characters
