@@ -9,9 +9,9 @@ class Spellbook {
         const savedSpells = [];
         // loop through local storage
         for(let i = 0; i < localStorage.length; i++) {
-            const key = localStorage.key(i); // store key as number
+            const key = localStorage.key(i); // store key as string
             
-            // add spell name to list
+            // check if key starts with spell_
             if(key.startsWith('spell_')) {
                 // extract spell name from key
                 const spellName = localStorage.getItem(key)

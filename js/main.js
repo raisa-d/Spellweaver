@@ -166,9 +166,8 @@ class SpellDisplayer {
   spellIsInLocalStorage(spellName) {
     for (let i = 0; i < localStorage.length; i++) {
       const key = localStorage.key(i);
-      // Convert key to number before comparison
-      const numKey = parseInt(key);
-      if (!isNaN(numKey) && localStorage.getItem(key) === spellName) {
+    
+      if (key.startsWith('spell_') && localStorage.getItem(key) === spellName) {
         return true;
       }
     }
