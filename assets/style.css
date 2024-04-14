@@ -334,6 +334,8 @@ footer a:hover {
     max-width: 80rem;
     min-height: 40rem;
     margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -371,6 +373,17 @@ footer a:hover {
     width: 60%;
     font-weight: bold;
     line-height: 3rem;
+}
+
+/* SPELL DETAILS ON SPELLBOOK PAGE */
+#spell-deets {
+    background: #91aaf4;
+    height: 35rem;
+    width:40rem;
+    margin-left: 2rem;
+    overflow:scroll;
+    scrollbar-width: thin;
+    scrollbar-color:#101935 #91aaf4;
 }
 
 /* ===MEDIA QUERIES=== */

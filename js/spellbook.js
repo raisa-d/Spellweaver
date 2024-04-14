@@ -2,6 +2,7 @@ class Spellbook {
     constructor() {
         this.container = document.querySelector('#spells-container');
         this.savedSpells = this.getSavedSpells();
+        this.spellDetailsContainer = document.querySelector('#spell-deets');
 
         // add event listener to the spells container. use bind(this) so this will refer to the instance of the Spellbook class and not to the spells container
         this.container.addEventListener('click', this.handleSpellSlotClick.bind(this));
@@ -10,6 +11,8 @@ class Spellbook {
     handleSpellSlotClick(event) {
         const spellSlot = event.target.closest('.spell-slot');
         if(spellSlot) {
+            this.hideOtherSpellSlots(spellSlot);
+
             // retrieve spell name
             const spellName = spellSlot.textContent.trim();
 
@@ -18,7 +21,25 @@ class Spellbook {
         }
     }
 
+    hideOtherSpellSlots(clickedSpellSlot) {
+        const allSpellSlots = this.container.querySelectorAll('.spell-slot');
+        
+        // loop thru all spell slots
+        allSpellSlots.forEach(spellSlot => {
+            // if the current spell slot is not the clicked one, hide it
+            if(spellSlot != clickedSpellSlot) {
+                spellSlot.classList.add('hidden');
+            }
+        })
+
+        this.container.style.justifyContent = "flex-start";
+    }
+
     displaySpellDetails(spellName) {
+        // show the spell deets container
+        this.spellDetailsContainer.classList.remove('hidden');
+        this.spellDetailsContainer.style.order = "1";
+
         console.log(`You clicked ${spellName}`);
     }
 
