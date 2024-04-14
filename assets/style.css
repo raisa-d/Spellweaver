@@ -386,6 +386,11 @@ footer a:hover {
     scrollbar-color:#101935 #91aaf4;
 }
 
+#spell-deets p {
+    margin: 2rem;
+    font-size: 2rem;
+}
+
 /* GO BACK BUTTON */
 #go-back {
     background: #654EB0;
