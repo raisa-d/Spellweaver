@@ -22,6 +22,14 @@ https://github.com/raisa-d/Spellweaver/assets/144272001/dbe5c56b-a999-442f-83c3-
 04.14.2024 //
 BUG FIX & EXPLANATION: Originally, the spells were set in local storage with a numerical key. Then, I changed it so the number is prefixed by "spell_". When I did this, it created a bug where spells would be stored as "spell_NaN" and overwrite each other. To fix this bug, I had to switch from using parseInt (which was what caused it to be NaN) and instead check if key.startsWith('spell_') in both the main.js file and the spellbook.js file.
 
+When users click on a spell in their spellbook, they will see the spell name side by side with the container in which the spell information will go (right now, an empty box). This was achieved using DOM manipulation in spellbook.js. I also added a go back button so when users are on this screen, they can go back to all the rest of their spells. In the future, I'd like to add a smooth animation between these two screens.
+
+The priorities for the next updates are:
+- Inserting the spell details into the DOM
+- Animating the switch between the spellbook screen and the spell description screen
+- Allow user to have multiple spellbooks for different characters
+- Give user the option to remove a spell from their spellbook
+
 04.11.2024 //
 Now when users add spells to their deck, the spells will appear on the spellbook page!
 The priority of the next updates are the following features:
