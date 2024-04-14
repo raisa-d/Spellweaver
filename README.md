@@ -19,6 +19,9 @@ https://github.com/raisa-d/Spellweaver/assets/144272001/dbe5c56b-a999-442f-83c3-
 - API Integration: Utilize the [D&D API](https://www.dnd5eapi.co/) to fetch information about spells from the official source. This ensures that your spellbook is always up-to-date with the latest rules and content additions.
 
 ## Development Stage
+04.14.2024 //
+BUG FIX & EXPLANATION: Originally, the spells were set in local storage with a numerical key. Then, I changed it so the number is prefixed by "spell_". When I did this, it created a bug where spells would be stored as "spell_NaN" and overwrite each other. To fix this bug, I had to switch from using parseInt (which was what caused it to be NaN) and instead check if key.startsWith('spell_') in both the main.js file and the spellbook.js file.
+
 04.11.2024 //
 Now when users add spells to their deck, the spells will appear on the spellbook page!
 The priority of the next updates are the following features:
