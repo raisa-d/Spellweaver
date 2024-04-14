@@ -386,6 +386,19 @@ footer a:hover {
     scrollbar-color:#101935 #91aaf4;
 }
 
+/* GO BACK BUTTON */
+#go-back {
+    background: #654EB0;
+    color: #CCC6E1;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.8rem 1.5rem;
+}
+
+#go-back i {
+    margin-right: 1rem;
+}
+
 /* ===MEDIA QUERIES=== */
 @media all and (max-width:1150px) {
     .col2 {

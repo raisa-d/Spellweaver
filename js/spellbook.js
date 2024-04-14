@@ -3,6 +3,7 @@ class Spellbook {
         this.container = document.querySelector('#spells-container');
         this.savedSpells = this.getSavedSpells();
         this.spellDetailsContainer = document.querySelector('#spell-deets');
+        this.goBackButton = document.querySelector('#go-back');
 
         // add event listener to the spells container. use bind(this) so this will refer to the instance of the Spellbook class and not to the spells container
         this.container.addEventListener('click', this.handleSpellSlotClick.bind(this));
@@ -32,12 +33,39 @@ class Spellbook {
             }
         })
 
+        // move the selected spell slot to flex start to give room for the description
         this.container.style.justifyContent = "flex-start";
+    }
+
+    // *** not sure why but when i use the properties i created (i.e., this.goBackButton) i got an error that those properties were null, so i had to write them out with query selectors
+    goBack() {
+        console.log('you hit the go back button')
+        
+        // hide the go back button
+        document.querySelector('#go-back').classList.add('hidden');
+
+         // show the rest of the spell slots
+         document.querySelectorAll('.spell-slot').forEach(spell => spell.classList.remove('hidden'));
+
+        //  hide spell details container
+         document.querySelector('#spell-deets').classList.add('hidden');
+
+        //  center spells-container again
+         document.querySelector('#spells-container').style.justifyContent = "center";
+
     }
 
     displaySpellDetails(spellName) {
         // show the spell deets container
         this.spellDetailsContainer.classList.remove('hidden');
+        
+        // display the go back button
+        this.goBackButton.classList.remove('hidden');
+
+        // add event listener for when go back button is pressed
+        this.goBackButton.addEventListener('click', this.goBack)
+        
+        // move the spell details container to the right of the spell
         this.spellDetailsContainer.style.order = "1";
 
         console.log(`You clicked ${spellName}`);
