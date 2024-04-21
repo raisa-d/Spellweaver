@@ -33,9 +33,10 @@ The priorities for the next updates are:
 ### 04.11.2024
 Now when users add spells to their deck, the spells will appear on the spellbook page!
 The priority of the next updates are the following features:
-- When user clicks a spell, it will expand to have all of the information.
+- When user clicks a spell, it will expand to have all of the information. (perhaps extend the SpellDisplayer class to do this and utilize polymorphism)
 - Allow user to have multiple spellbooks for different characters
-- Give user the option to remove a spell from their spellbook
+- Give user the option to remove a spell from their spellbook (add an edit button to trigger the ability to remove a spell)
+- On the search page, add a dropdown so user can select which spellbook they are adding to
 
 ### 04.10.2024
 The ability to add spells to local storage via hitting the plus button has been added. A user will not be able to add a spell twice if they try to. The plus symbol will turn to a check once the spell is added. The search page is also now responsive for all screen sizes. In the next update, the spells will actually be added to the "spellbook" page.
