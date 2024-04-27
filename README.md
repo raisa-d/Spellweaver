@@ -12,6 +12,7 @@ https://github.com/raisa-d/Spellweaver/assets/144272001/dbe5c56b-a999-442f-83c3-
 - [Lessons Learned](#lessons-learned)
 - [Design](#design)
 - [Contributing](#contributing)
+- [Contact](#contact)
 
 ## Technologies Used
 <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> 
@@ -106,3 +107,16 @@ The initial designs for the web app were created using Figma:
 
 ## Contributing
 We welcome contributions from the D&D community to make Spellweaver even better! Whether it's bug fixes, new features, or enhancements, feel free to fork our repository and submit pull requests. 
+
+## Contact
+<p> 
+  <a href="https://raisadorzback.netlify.app/" target="blank">
+    <img src="https://img.shields.io/badge/Website-563d7c?&style=for-the-badge" alt="Website">
+  </a>
+  <a href="https://www.linkedin.com/in/raisa-d/">
+    <img src="https://img.shields.io/badge/LinkedIn-046E6D?logo=linkedin&style=for-the-badge">
+  </a>
+  <a href="https://twitter.com/rai__bread" target="blank">
+    <img src="https://img.shields.io/badge/Twitter-563d7c?logo=twitter&style=for-the-badge&logoColor=white" alt="rai__bread" />
+  </a> 
+</p>
