@@ -51,6 +51,7 @@ https://github.com/raisa-d/Spellweaver/assets/144272001/dbe5c56b-a999-442f-83c3-
 <ul>
   <li>Integrating this web app with mongoDB instead of using local storage.</li>
   <li>Adding a login page and user authentication so the users can sync their spellbooks across devices.</li>
+  <li>Add ability to roll die for each spell by clicking a button.</li>
 </ul>
 
 ## Development Stage
