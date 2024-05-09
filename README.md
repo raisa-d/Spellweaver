@@ -1,10 +1,6 @@
 <h1 align="center">Spellweaver</h1>
 
-<p align="center">
-  <video>
-    <source width="500" src="/assets/images/spellweaver.mov" type="video/mov">
-  </video>
-</p>
+https://github.com/raisa-d/Spellweaver/assets/144272001/c993b52b-32ad-49de-9539-bb15912262a0
 
 <p>This repository holds the cold for Spellweaver, a web application designed to help Dungeons &amp; Dragons (D&D) players manage their spellbooks efficiently. Whether you're a player looking to organize your spells or a Dungeon Master (DM) preparing for an epic adventure, Spellweaver provides the tools you need to master the arcane arts. This web app is integrated with the RESTful API <a href="https://www.dnd5eapi.co/">dnd5e</a></p>
 
