@@ -69,6 +69,25 @@ class Spellbook {
         this.spellDetailsContainer.style.order = "1";
 
         console.log(`You clicked ${spellName}`);
+
+        this.fetchSpell(spellName);
+    }
+
+    // get spell information from fetch request
+    fetchSpell(spellName) {
+        // make spell name lowercase and any spaces into dashes
+        spellName = spellName.toLowerCase().split(' ').join('-');
+        const url = `https://www.dnd5eapi.co/api/spells/${spellName}`;
+        
+        // fetch request
+        fetch(url)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+            })
+            .catch(err => {
+                console.log(`Error: ${err}`);
+            });
     }
 
     // get an array of saved spells out of local storage
@@ -107,7 +126,7 @@ class Spellbook {
 
         // create paragraph, add spell-title class to it, change its content to the spell name
         const spellTitle = document.createElement('p');
-        spellTitle.classList.add('spell-title');
+        // spellTitle.classList.add('spell-title'); *** do we need this?
         spellTitle.textContent = spellName;
 
         // append title to slot
@@ -126,7 +145,7 @@ class Spellbook {
     }
 };
 
-// event listener
+// event listener. on page load, instantiate Spellbook
 document.addEventListener('DOMContentLoaded', () => {
     const spellbook = new Spellbook();
     spellbook.displaySpellNames();

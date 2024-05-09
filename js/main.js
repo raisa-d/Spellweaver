@@ -185,7 +185,7 @@ class SpellDisplayer {
   }
 };
 
-// instantiate SpellDisplayer
+// instantiate SpellDisplayer on search page
 const spellDisplayer = new SpellDisplayer();
 
 // ***TO DO: When you click a spell, it will expand to have all of the information.

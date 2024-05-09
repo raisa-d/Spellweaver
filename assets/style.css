@@ -386,7 +386,7 @@ footer a:hover {
     scrollbar-color:#101935 #91aaf4;
 }
 
-#spell-deets p {
+#spell-deets div > * {
     margin: 2rem;
     font-size: 2rem;
 }
