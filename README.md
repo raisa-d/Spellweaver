@@ -41,21 +41,22 @@ https://github.com/raisa-d/Spellweaver/assets/144272001/dbe5c56b-a999-442f-83c3-
 ## Optimizations
 <p>The next iterations of this web app will include the following functionality:</p>
 <ol>
-  <li>The switch between the spellbook screen and individual spell description screen will have a smooth animation.</li>
-  <li>Users will be able to have multiple spellbooks for different characters.</li>
+  <li>The switch between the spellbook screen and the individual spell description screen will have a smooth animation.</li>
+  <li>Users will have the option to name spellbooks and have multiple spellbooks for different characters.</li>
   <li>Users will have the option to edit their spellbooks and remove spells.</li>
   <li>On the search/home page, there will be a dropdown where the user can select which of their spellbooks they want to add the spell to.</li>
+  <li>Reduce redundant code across main.js and spellbook.js, especially in regards to DOM manipulation</li>
 </ol>
 <p>Future directions:</p>
 <ul>
   <li>Integrating this web app with mongoDB instead of using local storage.</li>
   <li>Adding a login page and user authentication so the users can sync their spellbooks across devices.</li>
-  <li>Add ability to roll die for each spell by clicking a button.</li>
+  <li>Add the ability to roll a die for each spell by clicking a button. Useful during gameplay!</li>
 </ul>
 
 ## Development Stage
 ### 05.09.2024
-Now when users select a spell within their spellbook, it will expand to show all of that spell's information!
+Now, when users select a spell within their spellbook, it will expand to show all of that spell's information! I worked on DOM manipulation in the spellbook.js file to achieve this result!
 
 ### 04.14.2024
 BUG FIX & EXPLANATION: Originally, the spells were set in local storage with a numerical key. Then, I changed it so the number is prefixed by "spell_". When I did this, it created a bug where spells would be stored as "spell_NaN" and overwrite each other. To fix this bug, I had to switch from using parseInt (which was what caused it to be NaN) and instead check if key.startsWith('spell_') in both the main.js file and the spellbook.js file.
