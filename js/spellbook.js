@@ -149,6 +149,12 @@ class Spellbook {
         // remove any content inside spellInfo
         this.spellInfo.textContent = '';
 
+        // Description
+        const description = document.createElement('p');
+        description.textContent = `${data.desc}`;
+        description.style.fontStyle = 'italic';
+        this.spellInfo.appendChild(description);
+
         // insert duration into DOM
         const duration = document.createElement('p');
         duration.textContent = `Duration: ${data.duration}`;
@@ -194,8 +200,46 @@ class Spellbook {
 
         // *** insert these 3 into DOM
         // Damage Type
+        const damageType = document.createElement('p');
+        damageType.textContent = `Damage Type: ${data.damage ? data.damage.damage_type.name : 'N/A'}`;
+        this.spellInfo.appendChild(damageType);
+
         // Damage at Character Level
-        // Description
+        const damageAtCharLvl = document.createElement('p');
+
+        // storing damage at each level
+        const dmgArray = [];
+
+        // fill dmg Array
+        if(data.damage) {
+            if(data.damage.damage_at_slot_level) {
+                for (const [key, value] of Object.entries(data.damage.damage_at_slot_level)) {
+                    dmgArray.push(`Lvl ${key}: ${value}`);
+                  };  
+            } else if(data.damage.damage_at_character_level) {
+                for (const [key, value] of Object.entries(data.damage.damage_at_character_level)) {
+                    dmgArray.push(`Lvl ${key}: ${value}`);
+                  };
+            };
+
+            damageAtCharLvl.textContent = `Damage At Character Level: `;
+
+            // create UL, lis, and append
+            let dmgUL = document.createElement('ul');
+            dmgArray.forEach(e => {
+                // create list item element
+                let li = document.createElement('li');
+                // insert each level into li
+                li.appendChild(document.createTextNode(e));
+                // add item to the UL
+                dmgUL.appendChild(li);
+            });
+            this.spellInfo.appendChild(damageAtCharLvl);
+            this.spellInfo.appendChild(dmgUL);
+        } else {
+            damageAtCharLvl.textContent = `Damage At Character Level: N/A`;
+            this.spellInfo.appendChild(damageAtCharLvl);
+        }
     }
 };
 
