@@ -4,6 +4,7 @@ class Spellbook {
         this.savedSpells = this.getSavedSpells();
         this.spellDetailsContainer = document.querySelector('#spell-deets');
         this.goBackButton = document.querySelector('#go-back');
+        this.spellInfo = document.querySelector('#spell-info');
 
         // add event listener to the spells container. use bind(this) so this will refer to the instance of the Spellbook class and not to the spells container
         this.container.addEventListener('click', this.handleSpellSlotClick.bind(this));
@@ -84,6 +85,7 @@ class Spellbook {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+                this.spellInfoIntoDOM(data);
             })
             .catch(err => {
                 console.log(`Error: ${err}`);
@@ -126,7 +128,6 @@ class Spellbook {
 
         // create paragraph, add spell-title class to it, change its content to the spell name
         const spellTitle = document.createElement('p');
-        // spellTitle.classList.add('spell-title'); *** do we need this?
         spellTitle.textContent = spellName;
 
         // append title to slot
@@ -142,6 +143,59 @@ class Spellbook {
         message.textContent = 'Your spellbook is empty. Go to the search page to add spells, then come back and check out your spellbook!';
 
         this.container.appendChild(message);
+    }
+
+    spellInfoIntoDOM(data) {
+        // remove any content inside spellInfo
+        this.spellInfo.textContent = '';
+
+        // insert duration into DOM
+        const duration = document.createElement('p');
+        duration.textContent = `Duration: ${data.duration}`;
+        this.spellInfo.appendChild(duration);
+
+        // casting time into DOM
+        const castingTime = document.createElement('p');
+        castingTime.textContent = `Casting Time: ${data.casting_time}`;
+        this.spellInfo.appendChild(castingTime);
+
+        // school into DOM
+        const school = document.createElement('p');
+        school.textContent = `School: ${data.school.name}`;
+        this.spellInfo.appendChild(school);
+
+        // level
+        const level = document.createElement('p');
+        level.textContent = `Level: ${data.level}`;
+        this.spellInfo.appendChild(level);
+
+        // range
+        const range = document.createElement('p');
+        range.textContent = `Range: ${data.range}`;
+        this.spellInfo.appendChild(range);
+
+        // classes
+        const classes = document.createElement('p');
+        const classesArray = data.classes.map(c => c.name).join(', ');
+        classes.textContent = `Classes: ${classesArray || 'N/A'}`;
+        this.spellInfo.appendChild(classes);
+
+        // subclasses
+        const subclasses = document.createElement('p');
+        const subclassesArray = data.subclasses.map(c => c.name).join(', ');
+        subclasses.textContent = `Subclasses: ${subclassesArray || 'N/A'}`;
+        this.spellInfo.appendChild(subclasses);
+
+        // Components
+        const components = document.createElement('p');
+        const componentsArray = data.components.join(', ');
+        components.textContent = `Components: ${componentsArray}`;
+        this.spellInfo.appendChild(components);
+
+        // *** insert these 3 into DOM
+        // Damage Type
+        // Damage at Character Level
+        // Description
     }
 };
 
