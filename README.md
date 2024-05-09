@@ -1,6 +1,10 @@
 <h1 align="center">Spellweaver</h1>
 
-https://github.com/raisa-d/Spellweaver/assets/144272001/dbe5c56b-a999-442f-83c3-02daeaaeafb5
+<p align="center">
+  <video>
+    <source width="500" src="/assets/images/spellweaver.mov" type="video/mov">
+  </video>
+</p>
 
 <p>This repository holds the cold for Spellweaver, a web application designed to help Dungeons &amp; Dragons (D&D) players manage their spellbooks efficiently. Whether you're a player looking to organize your spells or a Dungeon Master (DM) preparing for an epic adventure, Spellweaver provides the tools you need to master the arcane arts. This web app is integrated with the RESTful API <a href="https://www.dnd5eapi.co/">dnd5e</a></p>
 
@@ -45,6 +49,7 @@ https://github.com/raisa-d/Spellweaver/assets/144272001/dbe5c56b-a999-442f-83c3-
   <li>Users will have the option to name spellbooks and have multiple spellbooks for different characters.</li>
   <li>Users will have the option to edit their spellbooks and remove spells.</li>
   <li>On the search/home page, there will be a dropdown where the user can select which of their spellbooks they want to add the spell to.</li>
+  <li>Add ability to flip through "pages" on search page and look through all of the spells, perhaps with the ability to sort and filter them.</li>
   <li>Reduce redundant code across main.js and spellbook.js, especially in regards to DOM manipulation</li>
 </ol>
 <p>Future directions:</p>
