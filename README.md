@@ -41,7 +41,6 @@ https://github.com/raisa-d/Spellweaver/assets/144272001/dbe5c56b-a999-442f-83c3-
 ## Optimizations
 <p>The next iterations of this web app will include the following functionality:</p>
 <ol>
-  <li>The spell details will display once user has clicked on the individual spell in their spellbook.</li>
   <li>The switch between the spellbook screen and individual spell description screen will have a smooth animation.</li>
   <li>Users will be able to have multiple spellbooks for different characters.</li>
   <li>Users will have the option to edit their spellbooks and remove spells.</li>
@@ -55,6 +54,9 @@ https://github.com/raisa-d/Spellweaver/assets/144272001/dbe5c56b-a999-442f-83c3-
 </ul>
 
 ## Development Stage
+### 05.09.2024
+Now when users select a spell within their spellbook, it will expand to show all of that spell's information!
+
 ### 04.14.2024
 BUG FIX & EXPLANATION: Originally, the spells were set in local storage with a numerical key. Then, I changed it so the number is prefixed by "spell_". When I did this, it created a bug where spells would be stored as "spell_NaN" and overwrite each other. To fix this bug, I had to switch from using parseInt (which was what caused it to be NaN) and instead check if key.startsWith('spell_') in both the main.js file and the spellbook.js file.
 

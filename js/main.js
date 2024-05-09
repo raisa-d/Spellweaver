@@ -187,7 +187,3 @@ class SpellDisplayer {
 
 // instantiate SpellDisplayer on search page
 const spellDisplayer = new SpellDisplayer();
-
-// ***TO DO: When you click a spell, it will expand to have all of the information.
-// ***TO DO: Allow user to have multiple spellbooks for different characters
-// ***TO DO: Give option to remove spell from deck

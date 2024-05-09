@@ -198,7 +198,6 @@ class Spellbook {
         components.textContent = `Components: ${componentsArray}`;
         this.spellInfo.appendChild(components);
 
-        // *** insert these 3 into DOM
         // Damage Type
         const damageType = document.createElement('p');
         damageType.textContent = `Damage Type: ${data.damage ? data.damage.damage_type.name : 'N/A'}`;
@@ -249,6 +248,5 @@ document.addEventListener('DOMContentLoaded', () => {
     spellbook.displaySpellNames();
 });
 
-// ***TO DO: When you click a spell, it will expand to have all of the information.
 // ***TO DO: Allow user to have multiple spellbooks for different characters
 // ***TO DO: Give option to remove spell from deck
