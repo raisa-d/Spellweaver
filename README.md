@@ -45,6 +45,7 @@ https://github.com/raisa-d/Spellweaver/assets/144272001/c993b52b-32ad-49de-9539-
   <li>Users will have the option to name spellbooks and have multiple spellbooks for different characters.</li>
   <li>Users will have the option to edit their spellbooks and remove spells.</li>
   <li>On the search/home page, there will be a dropdown where the user can select which of their spellbooks they want to add the spell to.</li>
+    <li>Add functionality for sorting by different categories in your spellbook</li>
   <li>Add ability to flip through "pages" on search page and look through all of the spells, perhaps with the ability to sort and filter them.</li>
   <li>Reduce redundant code across main.js and spellbook.js, especially in regards to DOM manipulation</li>
 </ol>
